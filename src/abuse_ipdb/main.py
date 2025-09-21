@@ -11,7 +11,7 @@ def fetch_AbuseIPDB_IOCs():
 
     print(f"[*] Fetching blacklist entries from AbuseIPDB (limit {MAX_LIMIT})...")
     entries = fetch_blacklist(MAX_LIMIT)
-    print(f"✅ Retrieved {len(entries)} entries")
+    print(f"[*] Retrieved {len(entries)} entries")
 
     fetched_at = datetime.utcnow().isoformat() + "Z"
     normalized = [normalize(e, fetched_at) for e in entries]

@@ -2,7 +2,11 @@ from fastapi import FastAPI
 import schedule
 import time
 import threading
-from src import fetch_OTX_Alientvalut_IOCs, fetch_AbuseIPDB_IOCs
+from src import (
+    fetch_OTX_Alientvalut_IOCs,
+    fetch_AbuseIPDB_IOCs,
+    fetch_AbuseCH_URLhaus_IOCs
+)
 
 
 # ---------------- FastAPI App ----------------
@@ -13,9 +17,12 @@ app = FastAPI(title="Threat Harvester")
 def job():
     print("[*] Running daily OTX fetch...")
     fetch_OTX_Alientvalut_IOCs()
-    
+
     print("[*] Running daily AbuseIPDB fetch...")
     fetch_AbuseIPDB_IOCs()
+    
+    print("[*] Running daily URLhaus fetch...")
+    fetch_AbuseCH_URLhaus_IOCs()
 
 
 def run_scheduler():
