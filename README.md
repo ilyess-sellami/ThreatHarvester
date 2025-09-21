@@ -48,6 +48,7 @@ cd ThreatHarvester
 ```env
 OTX_API_KEY=""
 ABUSEIPDB_API_KEY=""
+ABUSE_CH_API_KEY=""
 ```
 
 3. Build and run the project with Docker Compose:
