@@ -10,7 +10,7 @@ def fetch_OTX_Alientvalut_IOCs():
     session = make_session()
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    print("[*] Fetching pulses from yesterday...")
+    print("[*] Fetching pulses ...")
     pulses = fetch_yesterday_pulses(session)
     print(f"[*] Found {len(pulses)} pulses.")
 
