@@ -4,7 +4,7 @@ import schedule
 import time
 import threading
 
-app = FastAPI(title="OTX Background Fetcher")
+app = FastAPI(title="Threat Harvester")
 
 # ---------------- Scheduler Job ----------------
 def job():
@@ -29,4 +29,4 @@ def startup_event():
 
 @app.get("/")
 def root():
-    return {"Welcome to APP"}
+    return {"Welcome to Threat Harvester"}
