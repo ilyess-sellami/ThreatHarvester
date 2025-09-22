@@ -1,5 +1,5 @@
 import requests
-from src.abuse_ch.config import URLHAUS_BASE_URL, HEADERS
+from src.ioc_platforms.abuse_ch.config import URLHAUS_BASE_URL, HEADERS
 from .normalize import normalize_urlhaus_item
 
 from datetime import datetime, timedelta
