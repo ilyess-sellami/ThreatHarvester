@@ -5,7 +5,7 @@
 ![Kibana](https://img.shields.io/badge/kibana-8.x-green.svg)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](.github/CONTRIBUTING.md)
 
-# Threat Harvester - Automated Threat Intelligence IoC Collector
+# Threat Harvester - Open-Source Threat Intelligence IoC Collector
 
 ![Threat Harvester](/screenshots/threat_harvester.png)
 
