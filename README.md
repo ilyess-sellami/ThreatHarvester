@@ -4,12 +4,12 @@
 
 ---
 
-## Overview
+## 📌 Overview
 **Threat Harvester** is an open-source Threat Intelligence **IoC (Indicators of Compromise)** collector designed for SOC teams, security researchers, and startups. This tool **fetches IoCs from multiple threat intelligence platforms** daily, normalizes them, and stores them in **Elasticsearch** for visualization in **Kibana**.
 
 ---
 
-## Key Features
+## 🛠️ Key Features
 
 - Fetches new or updated IoCs **every 24 hours**.
 - **Normalizes IoCs** with metadata such as type, TLP, tags, source, and pulse/campaign info.
@@ -20,7 +20,7 @@
 
 ---
 
-## Supported Sources
+## 🌐 Supported Sources
 
 **Threat Harvester** collects IoCs from the following threat intelligence sources:
 
@@ -33,7 +33,7 @@ These sources ensure a broad coverage of IoCs, from malware and malicious URLs t
 
 ---
 
-## Architecture Overview
+## 🏗️ Architecture Overview
 
 ...
 
@@ -44,7 +44,7 @@ These sources ensure a broad coverage of IoCs, from malware and malicious URLs t
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Requirements
 
