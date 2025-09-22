@@ -31,7 +31,7 @@ def job():
 
 def run_scheduler():
     # Runs daily at 1 AM UTC
-    schedule.every(1).minute.do(job)
+    schedule.every().day.at("01:00").do(job)
     while True:
         schedule.run_pending()
         time.sleep(30)
