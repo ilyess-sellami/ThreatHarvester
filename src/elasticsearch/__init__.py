@@ -1,0 +1,1 @@
+from .main import send_IOCs_to_elasticsearch

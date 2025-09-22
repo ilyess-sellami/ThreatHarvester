@@ -6,7 +6,8 @@ from src import (
     fetch_OTX_Alientvalut_IOCs,
     fetch_AbuseIPDB_IOCs,
     fetch_AbuseCH_URLhaus_IOCs,
-    fetch_AbuseCH_MalwareBazaar_IOCs
+    fetch_AbuseCH_MalwareBazaar_IOCs,
+    send_IOCs_to_elasticsearch
 )
 
 
@@ -27,7 +28,11 @@ def job():
     
     print("[*] Running daily MalwareBazaar fetch...")
     fetch_AbuseCH_MalwareBazaar_IOCs()
-
+    
+    print("[*] Sending collected IOCs to Elasticsearch...")
+    send_IOCs_to_elasticsearch()
+    
+    
 
 def run_scheduler():
     # Runs daily at 1 AM UTC

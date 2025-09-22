@@ -1,7 +1,6 @@
-import os
 import json
 from .indicators import fetch_recent
-from src.abuse_ch.config import URLHAUS_OUTPUT_FILE
+from src.ioc_platforms.abuse_ch.config import URLHAUS_OUTPUT_FILE
 
 
 def fetch_AbuseCH_URLhaus_IOCs():

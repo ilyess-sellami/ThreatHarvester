@@ -24,3 +24,9 @@ def get_output_file(platform: str, module: str = None) -> str:
 
     return os.path.join(OUTPUT_DIR, filename)
 
+
+def get_current_timestamp() -> str:
+    """
+    Return the current UTC timestamp in ISO 8601 format with 'Z'.
+    """
+    return datetime.utcnow().isoformat() + "Z"
