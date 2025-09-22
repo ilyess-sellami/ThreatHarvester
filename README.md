@@ -24,6 +24,8 @@
 
 **Threat Harvester** collects IoCs from the following threat intelligence sources:
 
+![OTX](screenshots/alienvault_otx.png) ![Abuse CH](screenshots/abuse_ch.png) ![AbuseIPDB](screenshots/abuseipdb.png)
+
 - **OTX AlienVault** – Open Threat Exchange, provides community-sourced IoCs and threat intelligence feeds.  
 - **MalwareBazaar - abuse.ch** – Repository of malware samples and related indicators like hashes and filenames.  
 - **URLhaus - abuse.ch** – Tracks URLs involved in malware distribution campaigns.  
