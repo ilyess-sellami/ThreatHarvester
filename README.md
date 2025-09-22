@@ -39,7 +39,7 @@ These sources ensure a broad coverage of IoCs, from malware and malicious URLs t
 
 ## 🏗️ Architecture Overview
 
-...
+![Threat Harvester Architecture](/screenshots/threat_harvester_architecture.png)
 
 **Workflow:**
 1. **Every 24 hours**, the scheduler fetches IoCs created or updated in the last day.
