@@ -1,14 +1,12 @@
-import os
 import json
 from .session import make_session
 from .pulses import fetch_yesterday_pulses
 from .indicators import fetch_pulse_indicators
 from .normalize import normalize_indicator
-from .config import OUTPUT_DIR, OUTPUT_FILE
+from .config import OUTPUT_FILE
 
 def fetch_OTX_Alientvalut_IOCs():
     session = make_session()
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     print("[*] Fetching pulses ...")
     pulses = fetch_yesterday_pulses(session)
