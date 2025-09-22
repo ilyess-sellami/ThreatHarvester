@@ -1,6 +1,9 @@
+from src.config import get_current_timestamp
+
 def normalize_indicator(ind, pulse):
     return {
         "source": "OTX",
+        "@timestamp": get_current_timestamp(),
         "indicator": ind.get("indicator") or ind.get("value"),
         "type": ind.get("type") or ind.get("indicator_type"),
         "pulse_id": pulse.get("id"),
