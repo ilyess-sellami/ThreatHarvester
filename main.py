@@ -5,7 +5,8 @@ import threading
 from src import (
     fetch_OTX_Alientvalut_IOCs,
     fetch_AbuseIPDB_IOCs,
-    fetch_AbuseCH_URLhaus_IOCs
+    fetch_AbuseCH_URLhaus_IOCs,
+    fetch_AbuseCH_MalwareBazaar_IOCs
 )
 
 
@@ -23,6 +24,9 @@ def job():
     
     print("[*] Running daily URLhaus fetch...")
     fetch_AbuseCH_URLhaus_IOCs()
+    
+    print("[*] Running daily MalwareBazaar fetch...")
+    fetch_AbuseCH_MalwareBazaar_IOCs()
 
 
 def run_scheduler():

@@ -1,3 +1,4 @@
 from .otx_alienvault import fetch_OTX_Alientvalut_IOCs
 from .abuse_ipdb import fetch_AbuseIPDB_IOCs
 from .abuse_ch import fetch_AbuseCH_URLhaus_IOCs
+from .abuse_ch import fetch_AbuseCH_MalwareBazaar_IOCs

@@ -9,7 +9,7 @@ def make_session():
     session.headers.update(
         {
             "X-OTX-API-KEY": API_KEY,
-            "User-Agent": "OTX-Yesterday-IOCs/1.0",
+            "User-Agent": "ThreatHarvester/1.0",
             "Accept": "application/json",
         }
     )

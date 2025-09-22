@@ -1,19 +1,19 @@
 import os
 from dotenv import load_dotenv
-from datetime import datetime
+from src.config import get_output_file
 
 load_dotenv()
 
-ABUSE_CH_API_KEY = os.getenv("ABUSE_CH_API_KEY")
-PLATFORM="abuse_ch"
+API_KEY = os.getenv("ABUSE_CH_API_KEY")
+PLATFORM = "abuse_ch"
 
-if not ABUSE_CH_API_KEY:
+if not API_KEY:
     raise ValueError("Please set ABUSE_CH_API_KEY in your .env file")
 
-HEADERS = {"Auth-Key": ABUSE_CH_API_KEY}
+HEADERS = {"Auth-Key": API_KEY, "User-Agent": "ThreatHarvester/1.0"}
 URLHAUS_BASE_URL = "https://urlhaus-api.abuse.ch/v1"
+MALWAREBAZAAR_BASE_URL = "https://mb-api.abuse.ch/api/v1/"
 
 
-OUTPUT_DIR = "outputs"
-today_str = datetime.utcnow().strftime("%Y-%m-%d")
-URLHAUS_OUTPUT_FILE = os.path.join(OUTPUT_DIR, f"iocs_{PLATFORM}_urlhaus_{today_str}.json")
+URLHAUS_OUTPUT_FILE = get_output_file(PLATFORM, "urlhaus")
+MALWAREBAZAAR_OUTPUT_FILE = get_output_file(PLATFORM, "malwarebazaar")
