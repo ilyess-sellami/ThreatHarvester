@@ -18,6 +18,21 @@
 - **Kibana** dashboards for **filtering and visualizing IoCs**.
 - **Dockerized** setup with automatic Elasticsearch and Kibana deployment.
 
+---
+
+## Supported Sources
+
+**Threat Harvester** collects IoCs from the following threat intelligence sources:
+
+- **OTX AlienVault** – Open Threat Exchange, provides community-sourced IoCs and threat intelligence feeds.  
+- **MalwareBazaar - abuse.ch** – Repository of malware samples and related indicators like hashes and filenames.  
+- **URLhaus - abuse.ch** – Tracks URLs involved in malware distribution campaigns.  
+- **AbuseIPDB** – A database of reported abusive IP addresses, including spammers, attackers, and botnets.  
+
+These sources ensure a broad coverage of IoCs, from malware and malicious URLs to abusive IPs, giving SOC teams a comprehensive view of the threat landscape.
+
+---
+
 ## Architecture Overview
 
 ...
