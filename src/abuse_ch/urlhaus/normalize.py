@@ -5,7 +5,7 @@ def normalize_urlhaus_item(item):
     return {
         "source": "URLhaus - abuse.ch",
         "type": "url",
-        "indicator": item.get("url"),
+        "indicator": item.get("host"),
         "url": item.get("url"),
         "host": item.get("host"),
         "date_added": item.get("date_added"),
