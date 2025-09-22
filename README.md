@@ -1,6 +1,6 @@
 # Threat Harvester
 
-...
+![Threat Harvester](/screenshots/threat_harvester.png)
 
 ---
 
