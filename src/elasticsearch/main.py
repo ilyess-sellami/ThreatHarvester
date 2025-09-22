@@ -1,8 +1,12 @@
 import os
 import json
 from datetime import datetime
-from .config import es, helpers, ES_INDEX
+from .config import ES_INDEX, ES_HOST
 from src.config import OUTPUT_DIR
+from elasticsearch import Elasticsearch, helpers
+
+# Connect to Elasticsearch
+es = Elasticsearch(ES_HOST)
 
 
 def send_IOCs_to_elasticsearch():
