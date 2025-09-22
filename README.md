@@ -2,6 +2,13 @@
 
 ![Threat Harvester](/screenshots/threat_harvester.png)
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
+![Docker](https://img.shields.io/badge/docker-ready-blue.svg)
+![Elasticsearch](https://img.shields.io/badge/elasticsearch-8.x-yellow.svg)
+![Kibana](https://img.shields.io/badge/kibana-8.x-green.svg)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](.github/CONTRIBUTING.md)****
+
 ---
 
 ## 📌 Overview
